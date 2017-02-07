@@ -1,0 +1,11 @@
+div {
+  color: black;    // then h1, ul, li color is black
+}
+
+ul {
+  color: white;    // then ul, li color is white
+}
+
+li:nth-of-type(2) {
+  color: red;      //the 2nd li element would be red
+}

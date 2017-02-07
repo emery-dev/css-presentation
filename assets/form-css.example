@@ -1,0 +1,33 @@
+body {
+  background-color:#ddd;
+  font-family: Helvetica;
+}
+#main {
+  margin: 0 auto;
+  width: 300px;
+  margin-top:300px;
+}
+form {
+  background-color:#eee;
+  border-radius: 5px;
+  padding: 10px;
+}
+#radio-holder {
+  display: block;
+  text-align: center;
+}
+input[type="text"] {
+  display: block;
+  color: #000;
+  font-size:18px;
+  padding: 5px 0 5px 5px;
+  margin: 5px auto;
+}
+input[type="submit"] {
+  display: block;
+  font-size:18px;
+  background-color: #ddd;
+  border-radius:10px;
+  color:#000;
+  margin: 10px auto 5px auto;
+}

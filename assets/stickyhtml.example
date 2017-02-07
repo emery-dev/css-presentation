@@ -1,0 +1,9 @@
+    <header>
+      <div id="center-content1"> <h1>The header<h1> </div>
+    </header>
+    <section id="content">
+      ...
+    </section>
+    <footer>
+      <div id="center-content2"> <h4>The footer</h4> </div>
+    </footer>

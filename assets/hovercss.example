@@ -1,0 +1,12 @@
+#outer {
+  margin: 0 auto;
+  width:300px;
+  font-size:20px;
+}
+
+a.ex1:hover {color: red;}
+a.ex2:hover {font-size: 150%;}
+a.ex3:hover {background: red;}
+a.ex4:hover {font-family: monospace;}
+a.ex5:visited{text-decoration: none;}
+a.ex5:hover, a.ex5:active {text-decoration: underline;}

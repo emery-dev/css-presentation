@@ -1,0 +1,7 @@
+<div id="outer">
+  <p><a class="ex1" href="#">This link changes color</a></p>
+  <p><a class="ex2" href="#">This link changes font-size</a></p>
+  <p><a class="ex3" href="#">This link changes background-color</a></p>
+  <p><a class="ex4" href="#">This link changes font-family</a></p>
+  <p><a class="ex5" href="#">This link changes text-decoration</a></p>
+</div>

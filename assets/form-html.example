@@ -1,0 +1,13 @@
+<div id="main">
+  <form method="POST" action="action.php">
+    <input type="text" name="first_name" placeholder="First name" />
+    <input type="text" name="last_name" placeholder="Last name" />
+    <div id="radio-holder">
+      <input type="radio" name="gender" value="male" />Male
+      <input type="radio" name="gender" value="female" />Female
+    </div>
+    <input type="text" name="email" placeholder="E-mail" />
+    <input type="text" name="phone" placeholder="Phone number" />
+    <input type="submit" value="Submit" />
+  </form>
+</div>
