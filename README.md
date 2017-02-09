@@ -1,3 +1,0 @@
-# css-presentation
-
-Css Presentation

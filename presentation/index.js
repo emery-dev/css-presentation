@@ -31,7 +31,8 @@ require("spectacle/lib/themes/default/index.css");
 const images = {
   header: require("../assets/header-setup.png"),
   formNoCss: require("../assets/form-no-css.png"),
-  formCss: require("../assets/form-css.png")
+  formCss: require("../assets/form-css.png"),
+  contentwater: require("../assets/contentwater.jpg")
 };
 
 preloader(images);
@@ -96,7 +97,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={["slide"]} bgColor="secondary">
-          <Heading size={3} textColor="primary" caps>"Header cascading"</Heading>
+          <Heading size={3} textColor="primary" caps>Header</Heading>
           <Image src={images.header.replace("/", "")} height="350px" />
         </Slide>
 
@@ -140,7 +141,7 @@ export default class Presentation extends React.Component {
         <Slide transition={["slide"]} bgColor="quartenary">
           <Heading size={3} textColor="quinary" margin="0 0 40px 0" caps>Form HTML + CSS</Heading>
           <Image src={images.formCss.replace("/", "")} margin="20px 0" height="300px" /> <br />
-          <Link href="http://codepen.io/anon/pen/PWBPqG" target="_blank"> codepen.io/anon/pen/PWBPqG </Link>
+          <Link href="http://codepen.io/emery-dev/pen/apRQLj" target="_blank"> http://codepen.io/emery-dev/pen/apRQLj </Link>
         </Slide>
 
         <Slide transition={["slide"]} bgColor="primary" textColor="tertiary">
@@ -165,7 +166,7 @@ export default class Presentation extends React.Component {
               source={require("raw-loader!../assets/hovercss.example")}
               margin="20px auto"
             />
-          <Link href="http://codepen.io/anon/pen/LxBzqq" target="_blank"> codepen.io/anon/pen/LxBzqq </Link>
+          <Link href="http://codepen.io/emery-dev/pen/rjqQpd" target="_blank"> http://codepen.io/emery-dev/pen/rjqQpd </Link>
         </Slide>
 
         <Slide align="flex-start flex-start" transition={["slide"]} bgColor="quartenary">
@@ -198,11 +199,42 @@ export default class Presentation extends React.Component {
           <Link href="https://codepen.io/anon/pen/vgaWYY" target="_blank"> codepen.io/anon/pen/vgaWYY </Link>
         </Slide>
 
-        <Slide transition={["slide"]} bgColor="secondary" textColor="primary" caps fit>
-          <BlockQuote>
-            <Quote>Example Quote</Quote>
-            <Cite>Author</Cite>
-          </BlockQuote>
+        <Slide align="flex-start flex-start" transition={["slide"]} bgColor="secondary">
+          <Heading margin="50px 0 50px 0" size={4} textColor="primary" caps fit>Media Queries</Heading>
+            <CodePane
+              lang="css"
+              source={require("raw-loader!../assets/mediaqueries.example")}
+              margin="20px auto"
+            />
+          <Link href="https://codepen.io/alexmorris/pen/tcnhA" target="_blank"> https://codepen.io/alexmorris/pen/tcnhA </Link>
+        </Slide>
+
+        <Slide transition={["slide"]} bgColor="quartenary">
+          <Heading size={2} textColor="secondary" caps bold>More:</Heading>
+          <Heading size={1} margin="30px 0 30px 0" textColor="primary" caps bold>CSS</Heading>
+          <Heading size={3} margin="30px 0 30px 0" textColor="primary" caps bold>Animations</Heading>
+          <Link href="https://emery-dev.github.io/blog/2017/02/09/intro-to-css-animations.html" target="_blank">
+            Blog/Tutorial
+          </Link>
+        </Slide>
+
+        <Slide align="flex-start flex-start" transition={["slide"]} bgColor="quartenary">
+          <Heading size={1} margin="30px 0 30px 0" textColor="primary" caps bold>CSS Animations</Heading>
+          <CodePane
+            lang="css"
+            source={require("raw-loader!../assets/keyframe.example")}
+            margin="20px auto"
+          />
+          <CodePane
+            lang="css"
+            source={require("raw-loader!../assets/animation.example")}
+            margin="20px auto"
+          />
+        <Link href="https://codepen.io/emery-dev/pen/ZLqMjN" target="_blank"> https://codepen.io/emery-dev/pen/ZLqMjN </Link>
+        </Slide>
+
+        <Slide align="center center" transition={["slide"]} bgColor="secondary" textColor="primary" caps fit>
+          <Image src={images.contentwater.replace("/", "")} height="700px" />
         </Slide>
       </Deck>
     );
